@@ -1,0 +1,1 @@
+document.writeln("OBS: não é necessário código javascript dentro do arquivo javascript (.js) fique a vontade se quiser adicionar alguma coisa")

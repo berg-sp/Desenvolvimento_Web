@@ -1,0 +1,11 @@
+Crie um objeto com o seguinte valores inseridos pelo usuario
+
+O objeto deve ter:
+Imprimir os objetos no console
+    Nome da empresa
+    CNPJ - Use informacoes ficticias
+    Tipo de empresa  (banco, farmacia, mercado)
+    Quantidade de funcionarios
+
+Adicione esses objetos em uma lista (a lista deve ser criada vazia)
+Mostrar a lista no navegador - writeln

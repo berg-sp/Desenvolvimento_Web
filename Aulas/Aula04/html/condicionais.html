@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    #p1, #p2{
+        color: red;
+        text-align: start;
+    }
+
+    #p3 {
+        color: orange;
+        text-align: center;
+    }
+
+    #p4 {
+        color: greenyellow;
+        text-align: end;
+    }
+</style>
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+    <p id="p2">elit. Rerum delectus repellendus culpa consectetur cumque </p>
+    <p id="p3">aspernatur praesentium! Praesentium ipsam nihil atque saepe? </p>
+    <p id="p4">Nesciunt ut modi repudiandae dolorem saepe odio earum sequi?</p>
+    
+
+    <p id="nome"></p>
+</body>
+<script>
+    var nomePessoa = prompt("Digite seu nome")
+
+    var tagNome = document.getElementById("nome")
+
+    tagNome.innerHTML = "O nome digitado foi " + nomePessoa
+
+</script>
+
+<script src="../js/condicionaisComHtml.js"></script>
+</html>
