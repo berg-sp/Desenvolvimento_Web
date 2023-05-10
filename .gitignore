@@ -1,0 +1,6 @@
+obj-func
+*.cs
+*.py
+.class
+*.java
+node_modules
