@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8050
+const port = 8070
 
 app.use(express.json())
 
@@ -16,7 +16,7 @@ app.post('/adicionar-produto', (req, res) => {
     return res.status(201).json('produto adicionado com sucesso!')
 })
 
-app.get('/', (req, res) => {
+app.get('/listar-produtos', (req, res) => {
     return res.status(200).json(bancoDeDadosProdutos)
 })
 
