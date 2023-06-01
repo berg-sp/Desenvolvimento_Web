@@ -3,17 +3,17 @@ const mongoose = require('mongoose')
 const app = express()
 const port = 8050
 const connectionString = "mongodb+srv://admin:admin123@appdatabase.wspfuht.mongodb.net/"
-const animal = require('./models/animal')
+const Animal = require('./models/animal')
 
-app.use(express.json)
+app.use(express.json())
 
 // ENDPOINT
-app.get("listar-animais", async (req, res) => {
+app.get("/listar-animais", async (req, res) => {
     try {
         let animais = await animal.find()
         return res.status(200).json(animais)
     } catch (error) {
-        return satisfies.status(500).json(error)
+        return res.status(500).json(error)
     }
 })
 
@@ -28,8 +28,8 @@ app.post('/adicionar-animal', async (req, res) => {
     }
 
     try {
-        await animal.create(animal)
-        return res.status(201).json({ message: "Animal cadastrado com sucesso"})
+        await Animal.create(animal)
+        return res.status(201).json({ message: "Animal cadastrado com sucesso!" })
     } catch (error) {
         return res.status(500).json({ message: error.message })
     } 

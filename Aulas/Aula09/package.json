@@ -12,5 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
+=======
+  "devDependencies": {},
+>>>>>>> bbfaf8ebba470bb008b79ecf966a770eaf3c43f2
   "description": ""
 }
