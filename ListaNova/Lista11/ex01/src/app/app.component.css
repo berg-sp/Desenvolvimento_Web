@@ -1,0 +1,26 @@
+.menu {
+  justify-content: center;
+  align-items: center;
+
+}
+.produtos {
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+
+.produtos p {
+  color: green;
+}
+
+.produtos:hover {
+  max-width: 310px;
+}
+
+.produtos p:hover {
+  color: pink;
+}

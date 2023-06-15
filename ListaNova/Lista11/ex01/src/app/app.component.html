@@ -1,0 +1,14 @@
+
+<div id="menu">
+  <a class="menu" href="#">Home</a>&nbsp;
+  <a class="menu" href="#">Produtos</a>&nbsp;
+  <a class="menu" href="#">Sobre nós</a>&nbsp;
+  <a class="menu" href="#">Contato</a>&nbsp;
+</div>
+
+<div class="produtos" *ngFor="let produto of listaProdutos">
+  <p>{{ produto.nome }}</p>
+  <p>{{ produto.descricao }}</p>
+  <p>{{ produto.preco }}</p>
+  <img width="300" height="150" [src]="produto.image" />
+</div>
